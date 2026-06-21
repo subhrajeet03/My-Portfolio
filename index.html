@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhrajeet Swain | BCA Graduate & MCA Student</title>
+  <meta name="description" content="Portfolio of Subhrajeet Swain — BCA Graduate, MCA student, and aspiring tech professional skilled in C, C++, Python, MySQL, and software testing." />
+  <meta name="keywords" content="Subhrajeet Swain, BCA, MCA, portfolio, developer, software testing, Odisha, Python, C++, MySQL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>SS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name-text">Subhrajeet<br /><span class="name-accent">Swain</span></span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-static">I'm a </span>
+        <span class="role-dynamic" id="role-dynamic"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-description">
+        A highly motivated BCA graduate & MCA student passionate about technology, 
+        software testing, and building real-world solutions.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+          <span>Get In Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+        </a>
+        <a href="#projects" class="btn btn-secondary" id="hero-projects-btn">View My Work</a>
+      </div>
+      <div class="hero-social">
+        <a href="mailto:subhrajeet03@gmail.com" class="social-icon" id="social-email" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/subhrajeet-swain" target="_blank" rel="noopener" class="social-icon" id="social-linkedin" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="tel:+919776445055" class="social-icon" id="social-phone" aria-label="Phone" title="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrapper">
+          <div class="about-avatar" id="about-avatar">
+            <div class="avatar-inner">
+              <span class="avatar-initials">SS</span>
+            </div>
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card" id="stat-cgpa">
+              <span class="stat-value">7.08</span>
+              <span class="stat-label">BCA CGPA</span>
+            </div>
+            <div class="stat-card" id="stat-exp">
+              <span class="stat-value">1+</span>
+              <span class="stat-label">Year Internship</span>
+            </div>
+            <div class="stat-card" id="stat-projects">
+              <span class="stat-value">1+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-subtitle">BCA Graduate &amp; MCA Student</h3>
+          <p class="about-desc">
+            I'm <strong>Subhrajeet Swain</strong>, a passionate BCA graduate currently pursuing my 
+            <strong>Master of Computer Applications (MCA)</strong> at Presidency College, Berhampur. 
+            I have a strong foundation in computer applications, programming, and software testing.
+          </p>
+          <p class="about-desc">
+            My internship at <strong>Team Pumpkin (Tech.)</strong> gave me hands-on experience in manual 
+            testing, test case development, bug tracking, and UI/UX evaluation. I'm driven by curiosity, 
+            love for technology, and the desire to build impactful solutions.
+          </p>
+          <div class="about-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">📍 Location</span>
+              <span class="detail-value">Aska, Odisha, India</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">🎂 Date of Birth</span>
+              <span class="detail-value">April 24, 2003</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">🌐 Languages</span>
+              <span class="detail-value">English, Hindi, Odia</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">💼 Status</span>
+              <span class="detail-value">Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="about-interests">
+            <span class="interest-tag">🤝 Volunteering</span>
+            <span class="interest-tag">📚 Learning New Skills</span>
+            <span class="interest-tag">💻 Technology</span>
+            <span class="interest-tag">🛠️ Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="timeline" id="education-timeline">
+
+        <div class="timeline-item active" id="edu-mca">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-year current-badge">Currently Pursuing</span>
+              <span class="timeline-year-num">2024 – Present</span>
+            </div>
+            <h3 class="timeline-degree">Master of Computer Applications (MCA)</h3>
+            <p class="timeline-institution">🏛️ Presidency College, Berhampur, Odisha</p>
+            <p class="timeline-detail">Deepening expertise in advanced programming, software engineering, and computer science fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-bca">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">CGPA: 7.08</span>
+              <span class="timeline-year-num">Graduated: April 2024</span>
+            </div>
+            <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-institution">🏛️ Science College (Autonomous), Hinjilicut, Odisha</p>
+            <p class="timeline-detail">Studied core computer science subjects including programming, databases, networking, and software development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-12">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">56%</span>
+              <span class="timeline-year-num">July 2021</span>
+            </div>
+            <h3 class="timeline-degree">Class XII — Science</h3>
+            <p class="timeline-institution">🏛️ Binayak Acharya H.S. School, Berhampur, Odisha</p>
+            <p class="timeline-detail">Board: Odisha | Medium: Odia</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-10">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">52%</span>
+              <span class="timeline-year-num">May 2019</span>
+            </div>
+            <h3 class="timeline-degree">Class X</h3>
+            <p class="timeline-institution">🏛️ Aryan Public School, Aska, Odisha</p>
+            <p class="timeline-detail">Board: CBSE | Medium: English</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Experience</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="experience-card" id="exp-teampumpkin">
+        <div class="exp-header">
+          <div class="exp-company-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="exp-company-info">
+            <h3 class="exp-role">Software Testing Intern</h3>
+            <p class="exp-company">Team Pumpkin (Tech.)</p>
+            <span class="exp-duration">April 2025 – March 2026 &nbsp;|&nbsp; 1 Year</span>
+          </div>
+          <div class="exp-badge">
+            <span>Internship</span>
+          </div>
+        </div>
+        <div class="exp-body">
+          <ul class="exp-responsibilities">
+            <li id="exp-task-1">
+              <span class="exp-icon">🔍</span>
+              <span>Performed <strong>manual testing</strong> on web applications and mobile platforms, ensuring quality and functionality.</span>
+            </li>
+            <li id="exp-task-2">
+              <span class="exp-icon">📋</span>
+              <span>Created and executed <strong>detailed test cases and test scenarios</strong> based on functional requirements.</span>
+            </li>
+            <li id="exp-task-3">
+              <span class="exp-icon">🐛</span>
+              <span>Reported bugs and tracked their status using <strong>Acedboard</strong> bug tracking system.</span>
+            </li>
+            <li id="exp-task-4">
+              <span class="exp-icon">🎨</span>
+              <span>Conducted <strong>UI/UX testing</strong> to validate user interface consistency and experience standards.</span>
+            </li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">Manual Testing</span>
+            <span class="exp-tag">Test Case Design</span>
+            <span class="exp-tag">Bug Tracking</span>
+            <span class="exp-tag">Acedboard</span>
+            <span class="exp-tag">UI/UX Testing</span>
+            <span class="exp-tag">Web Testing</span>
+            <span class="exp-tag">Mobile Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Skills</span>
+        <h2 class="section-title">My Toolkit</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" id="skill-cat-programming">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-c">
+              <div class="skill-info"><span class="skill-name">C</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 75%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-cpp">
+              <div class="skill-info"><span class="skill-name">C++</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 70%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-python">
+              <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-testing">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Testing & QA</h3>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-manual">
+              <div class="skill-info"><span class="skill-name">Manual Testing</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 80%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-testcase">
+              <div class="skill-info"><span class="skill-name">Test Case Design</span><span class="skill-percent">78%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 78%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-uiux">
+              <div class="skill-info"><span class="skill-name">UI/UX Testing</span><span class="skill-percent">72%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 72%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-bugtracking">
+              <div class="skill-info"><span class="skill-name">Bug Tracking</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-tools">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Tools & Technologies</h3>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-mysql">
+              <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 65%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-msoffice">
+              <div class="skill-info"><span class="skill-name">MS Office Suite</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 85%"></div></div>
+            </div>
+            <div class="skill-item" id="skill-acedboard">
+              <div class="skill-info"><span class="skill-name">Acedboard</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="--w: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat-soft">
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-pill" id="soft-comm">💬 Communication</div>
+            <div class="soft-skill-pill" id="soft-problem">🧠 Problem Solving</div>
+            <div class="soft-skill-pill" id="soft-team">🤝 Teamwork</div>
+            <div class="soft-skill-pill" id="soft-learn">⚡ Quick Learner</div>
+            <div class="soft-skill-pill" id="soft-critical">🔍 Critical Thinking</div>
+            <div class="soft-skill-pill" id="soft-adapt">🔄 Adaptability</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card featured" id="project-hms">
+          <div class="project-card-inner">
+            <div class="project-number">01</div>
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="project-badge-row">
+              <span class="project-badge featured-badge">⭐ Featured</span>
+              <span class="project-duration">Duration: 2 Months</span>
+            </div>
+            <h3 class="project-title">E-Hospital Management System</h3>
+            <p class="project-desc">
+              A comprehensive web-based Hospital Management System designed to digitize and streamline all hospital operations. 
+              The system manages doctors, patients, lab results, medical supplies, appointments, billing, insurance, and reports — 
+              all in one integrated platform.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">👨‍⚕️</span>
+                <span>Doctor & Patient Management</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📅</span>
+                <span>Appointment Scheduling</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🧪</span>
+                <span>Lab Results Integration</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💰</span>
+                <span>Billing & Insurance</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Web Application</span>
+              <span class="tech-tag">Database Management</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">System Design</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a question, a project, or just want to say hi — my inbox is always open!</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:subhrajeet03@gmail.com" class="contact-value">subhrajeet03@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone1">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Primary Phone</span>
+              <a href="tel:+919776445055" class="contact-value">+91-9776445055</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone2">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1.09h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Alternate Phone</span>
+              <a href="tel:+917205489555" class="contact-value">+91-7205489555</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/subhrajeet-swain" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/subhrajeet-swain</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Aska, Odisha, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="subject" placeholder="Job Opportunity / Collaboration" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="Hello Subhrajeet, I'd like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              <span id="btn-text">Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+            </button>
+            <p class="form-note" id="form-success-msg" style="display:none;">✅ Thank you! Message received. I'll get back to you shortly.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>SS<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed &amp; Built by <strong>Subhrajeet Swain</strong></p>
+      <p class="footer-sub">BCA Graduate | MCA Student | Aspiring Tech Professional</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Subhrajeet Swain. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
